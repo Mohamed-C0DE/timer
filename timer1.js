@@ -9,12 +9,12 @@ const timer = (num) => {
     if (el > 0 && Number.isInteger(el)) {
       setTimeout(() => {
         process.stdout.write(".");
-      }, el);
+      }, el * 1000);
     }
   }
   setTimeout(() => {
     process.stdout.write("\n");
-  }, args.slice(-1));
+  }, args.slice(-1) * 1000);
 };
 
 timer(args);
